@@ -7,17 +7,17 @@ The dashboard development started with understanding the core KPIs critical for 
 
 One major trade-off was between complexity and performance. Including detailed drill-downs for each agent's performance impacted dashboard responsiveness. To mitigate this, I implemented aggregated views for initial display, allowing users to drill down into more detailed data as needed. This preserved performance while still providing depth of information.
 
-Visual Design and Layout
+##  Visual Design and Layout
 The visual layout was designed to communicate effectively and quickly provide useful insights. I used a grid layout to organize visuals logically, aligning them with users' expectations based on common dashboard reading patterns (left to right, top to bottom). Key metrics were placed prominently at the top, with more detailed analytics below.
 
 Color coding played a crucial role. For example, using green for performance metrics that were within target and red for those that were not helped in quickly drawing attention to areas needing focus. This color strategy was consistently applied across all visuals to maintain coherence.
 
 Interactive elements such as slicers for date ranges and dropdowns for agent names were added to the top of the dashboard to allow users to filter data dynamically without overwhelming them with options.
 
-Challenges and High Design Priority
+##  Challenges and High Design Priority
 The highest design priority was ensuring that the dashboard could be universally understood by all levels of management without extensive training. Achieving this required simplifying some of the more complex data representations. For instance, transforming raw data on call durations and resolutions into a more digestible format like average handling time and resolution rate percentages posed a challenge. I utilized DAX formulas to calculate these metrics directly within Power BI, ensuring accuracy and simplification in presentation.
 
-Findings and Recommendations
+##  Findings and Recommendations
 From the dashboard, it was clear that while average satisfaction ratings were generally good, there were fluctuations that correlated with specific agents and times of day. This insight led to the recommendation to adjust staffing levels during peak hours to improve customer service levels.
 
 Furthermore, the data revealed that certain services associated with higher customer satisfaction scores could be leveraged more effectively. I recommended focusing training on these high-impact areas to boost overall customer satisfaction.
